@@ -6,15 +6,26 @@
 <meta charset="utf-8">
 	<title>Almaty</title>
 </head>
-<body>
+<body>		
 	<div class="all">
-		<divs class="in">
+		<div class="in">
 			<h1> Welcome</h1>
-			<form>
-				<input type="text" name="nick" class="in1" placeholder="Как вас зовут?">
-				<button class="knopka" type="button"  onclick="location.href='index2.html'" >Log In</button> </a>
-			</form>
-		</div>
-	</div>	
+			<form> 
+<input type="text" id="privet" class="in1" placeholder="Как вас зовут?" required> 
+<input type="button" onclick="getValue()" value="Log In" class="knopka"> 
+</form>
+</div> 
+</div> 
+<script type="text/javascript"> 
+function getValue(){ 
+var privet = document.getElementById('privet');
+var text = document.getElementById("privet").value; 
+if ( text === "") {
+privet.placeholder="Введите имя!";}
+else {
+location.href="index2.html";
+} 
+}
+</script>
 </body>
-</html>x
+</html>
